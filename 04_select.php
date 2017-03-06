@@ -20,7 +20,7 @@ try {
         $row = $result->fetch(PDO::FETCH_ASSOC);
         echo "<tr>";
         // VUL AAN zodat alle inhouden en tijdstippen worden getoond
-        echo "</tr>";
+        echo "<tr><td>".$row["inhoud"]."</td><td>".$row["tijdstip"]."</td></tr>";
     }
 
     echo "</table>"; 
