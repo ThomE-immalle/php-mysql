@@ -12,8 +12,9 @@ try {
 
     // zorg dat de database ge-update wordt
     // en getoond wordt hoeveel rijen aangepast zijn
-    
-    echo $aantal_aangepast . " rijen aangepast...";
+    $stmt->execute();
+
+    echo $stmt->rowCount() . " rijen aangepast...";
 }
 catch(PDOException $e)
 {
